@@ -1,0 +1,38 @@
+{
+  "name": "pg-sql-strings",
+  "version": "1.0.0",
+  "description": "Postgres parametrized query builder",
+  "author": "Razdrogin Roman <r.razdrogin@gmail.com>",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razdrom/pg-sql-strings.git"
+  },
+  "keywords": [
+    "pg",
+    "sql",
+    "statement",
+    "tag",
+    "template",
+    "parametrized query"
+  ],
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/razdrom/rabbitmq-nestjs/issues"
+  },
+  "homepage": "https://github.com/razdrom/rabbitmq-nestjs#readme",
+  "devDependencies": {
+    "@types/pg": "^8.6.5",
+    "pg": "^8.8.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}

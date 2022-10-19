@@ -1,0 +1,14 @@
+import { sql } from "../lib";
+import { query } from "./query-interface";
+
+const params = { age: 18 }
+
+const statement = sql`SELECT name, age FROM users`
+
+if (params.age) {
+    statement.append(sql`WHERE age > ${params.age}`)
+}
+
+query(statement).then(([rows]) => {
+    console.log(rows) // returns [ { name: 'Mary', age: 39 }, { name: 'Ingvar', age: 27 } ]
+})
