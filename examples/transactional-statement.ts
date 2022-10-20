@@ -1,5 +1,5 @@
-import { sql } from "../lib";
 import { transaction } from "./query-interface";
+import { sql } from "../";
 
 async function run() {
     const { begin, rollback, release, query } = await transaction()

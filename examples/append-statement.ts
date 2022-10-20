@@ -1,5 +1,5 @@
-import { sql } from "../lib";
 import { query } from "./query-interface";
+import { sql } from "../";
 
 const params = { age: 18 }
 

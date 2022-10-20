@@ -1,5 +1,5 @@
 import { Pool } from 'pg'
-import { Statement } from "../lib";
+import {Statement} from "../";
 
 // create postgres pool
 const pool = new Pool({
