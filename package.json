@@ -22,6 +22,7 @@
   "files": [
     "dist/lib"
   ],
+  "exports": "./dist/lib/index.js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/razdrom/pg-sql-strings/issues"
