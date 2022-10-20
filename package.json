@@ -1,9 +1,9 @@
 {
   "name": "pg-sql-strings",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Postgres parametrized query builder",
   "author": "Razdrogin Roman <r.razdrogin@gmail.com>",
-  "main": "index.js",
+  "main": "index.ts",
   "typings": "index.d.ts",
   "scripts": {
     "build": "tsc",
@@ -22,7 +22,7 @@
     "parametrized query"
   ],
   "files": [
-    "lib"
+    "dist/lib"
   ],
   "license": "MIT",
   "bugs": {
