@@ -1,5 +1,5 @@
 import { query } from "./query-interface";
-import { sql } from "../";
+import { sql } from "../lib";
 
 
 const number = 99
