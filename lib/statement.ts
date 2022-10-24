@@ -51,7 +51,3 @@ export class Statement {
         }
     }
 }
-
-export function sql(strings, ...args) {
-    return new Statement(strings, args);
-}
