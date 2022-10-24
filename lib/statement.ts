@@ -2,10 +2,7 @@ export class Statement {
     parts = []; // statement parts
     replacements = []; // parametrized query values
 
-    constructor(
-        private strings: string[],
-        private args: any[]
-    ) {
+    constructor(private strings: string[], private args: any[]) {
         this.parts.push(strings);
         this.replacements.push(args);
     }
@@ -24,6 +21,7 @@ export class Statement {
                 })
                 .join('');
         }
+
         return this.parts.join(' ');
     }
 
@@ -37,4 +35,23 @@ export class Statement {
         this.parts.push(statement.strings);
         this.replacements.push(statement.args);
     }
+
+    // join statements with separator
+    public join(statements: Statement[], separator: string) {
+        for (const [index, statement] of statements.entries()) {
+            // Add statement
+            this.parts.push(statement.strings);
+            this.replacements.push(statement.args);
+
+            // Add separator
+            if (statements.length - 1 !== index) {
+                this.parts.push([separator]);
+                this.replacements.push([]);
+            }
+        }
+    }
+}
+
+export function sql(strings, ...args) {
+    return new Statement(strings, args);
 }

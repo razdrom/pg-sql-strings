@@ -1,6 +1,6 @@
 {
   "name": "pg-sql-strings",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Postgres parametrized query builder",
   "author": "Razdrogin Roman <r.razdrogin@gmail.com>",
   "scripts": {
